@@ -228,68 +228,137 @@ th {
 /*--------------------------------------------------------------
 # Site Frame
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Site Header
+--------------------------------------------------------------*/
 .site-header {
   border-top: 2px solid black;
-  height: 20vh;
+  height: auto;
   background: linear-gradient(to top, rgba(255, 0, 0, 0), #771414);
   padding: 0 2em;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-direction: row; }
 
 .site-branding {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: center;
+  flex-direction: column; }
   .site-branding p {
     margin: 0; }
   .site-branding .site-title {
     display: none; }
   .site-branding .site-description {
-    border-left: 1px solid white;
-    margin-left: 1em;
-    padding-left: 1em; }
+    justify-content: center; }
 
-.main-navigation {
-  clear: both;
+@media screen and (min-width: 37.5em) {
+  .site-header {
+    height: 20vh;
+    flex-direction: row; }
+
+  .site-branding {
+    width: 50%;
+    justify-content: flex-start;
+    flex-direction: row; }
+    .site-branding .site-description {
+      border-left: 1px solid white;
+      margin-left: 1em;
+      padding-left: 1em; } }
+/*--------------------------------------------------------------
+## Site Navigation
+--------------------------------------------------------------*/
+/*! responsive-nav.js 1.0.39 by @viljamis */
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   display: block;
-  float: left;
-  width: 50%; }
-  .main-navigation ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul a {
-      color: white; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+  list-style: none; }
 
+.nav-collapse li {
+  width: 100%;
+  display: block; }
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1; }
+
+.nav-collapse.opened {
+  max-height: 9999px; }
+
+.nav-toggle {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+@media screen and (min-width: 37.5em) {
+  .js .nav-collapse {
+    position: relative; }
+
+  .js .nav-collapse.closed {
+    max-height: none; }
+
+  .nav-toggle {
+    display: none; }
+
+  .main-navigation {
+    clear: both;
+    display: block;
+    float: left;
+    width: 50%; }
+    .main-navigation ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none;
+      margin: 0;
+      padding-left: 0; }
+      .main-navigation ul li {
+        width: auto; }
+        .main-navigation ul li a {
+          color: white;
+          text-decoration: none; }
+          .main-navigation ul li a:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 3px;
+            width: 0px;
+            transition: width .5s ease, background-color .5s ease; }
+          .main-navigation ul li a:hover:after {
+            width: 100%;
+            background: #D7342C; }
+    .main-navigation .current_page_item > a,
+    .main-navigation .current-menu-item > a,
+    .main-navigation .current_page_ancestor > a {
+      font-weight: 700; } }
+/*
+@media screen and (min-width: 37.5em) {
+.menu-toggle {
+    display: none;
+}
+    
+}
+*/
+/*--------------------------------------------------------------
+## Site Footer
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/

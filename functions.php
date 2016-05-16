@@ -40,10 +40,11 @@ function eruma_yon_the_custom_logo(){
 endif;
 
 function eruma_yon_scripts() {
-    wp_enqueue_style( 'custom-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic|Oswald:400,700,300|Vollkorn:400,400italic|Source+Code+Pro:300', false );
+    wp_enqueue_style('custom-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic|Oswald:400,700,300|Vollkorn:400,400italic|Source+Code+Pro:300', false);
     
-	wp_enqueue_style( 'eruma-yon-style', get_stylesheet_uri() );
+	wp_enqueue_style('eruma-yon-style', get_stylesheet_uri());
 
-	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/baf6baca4e.js', false );
+	wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/baf6baca4e.js', false);
+    wp_enqueue_script('eruma-yon-navigation', get_template_directory_uri() . '/scripts/responsive-nav.min.js', false);
 }
-add_action( 'wp_enqueue_scripts', 'eruma_yon_scripts' );
+add_action('wp_enqueue_scripts', 'eruma_yon_scripts');

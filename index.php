@@ -26,12 +26,15 @@
                     <?php endif;
                 ?>
             </div><!-- .site-branding -->
-            <nav id="site-navigation" class="main-navigation" role="navigation">
-                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+            <nav id="site-navigation" class="main-navigation nav-collapse" role="navigation">
+                <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
             </nav><!-- #site-navigation -->
         </header><!-- #masthead .site-header -->
         <footer></footer>
     </div><!-- #page .hfeed .site -->
+    <script>
+        var nav = responsiveNav(".nav-collapse");
+    </script>
     <?php wp_footer(); ?>
 </body>
 </html>
