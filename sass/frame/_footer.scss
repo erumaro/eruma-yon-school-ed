@@ -1,1 +1,49 @@
 // Site Footer
+
+.site-footer{
+	height: auto;
+	background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    
+    a{
+        color: #fff;
+        text-decoration-style: dotted;
+    }
+    
+    .footer-sidebar{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1em;
+        
+        .column{
+            padding-left: 0;
+        }
+    }
+}
+
+.site-info{
+    background: #5c0317;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0.5em 0.5em;
+    border-top: 5px solid #eee;
+}
+
+@media screen and (min-width: 37.5em) {
+    .site-footer{
+
+
+        .footer-sidebar{
+            flex-direction: row;
+        }
+    }
+    .widget-contactform{
+        width: 30%;
+    }
+
+    .widget-contactinfo{
+        width: 20%;
+    }
+}

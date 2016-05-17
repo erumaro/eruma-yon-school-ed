@@ -1,0 +1,40 @@
+.page{
+    .site-content{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1em;
+        flex-direction: column;
+        max-width: 1000px;
+        margin: 0 auto;
+        
+        #primary{
+            
+            .page-title{
+                color: white;
+                margin-top: 0;
+            }
+            
+            article{
+                background: white;
+                padding: 0.5em;
+                margin: 1em 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 37.5em) {
+.page{
+    .site-content{
+        align-items: stretch;
+        flex-direction: row;
+        
+        #primary{
+            width: 60%;
+        }
+        #secondary{
+            width: $size__site-sidebar;
+        }
+    }
+}    
+}

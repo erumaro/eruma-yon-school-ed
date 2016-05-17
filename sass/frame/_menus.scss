@@ -34,10 +34,23 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 0;
+    text-decoration: none;
+    
+    &:before{
+        content: "\f0c9";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        color: #fff;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 20%;
+    }
 }
 
 @media screen and (min-width: 37.5em) {
