@@ -8,7 +8,9 @@
         </footer>
     </div><!-- #page .hfeed .site -->
     <script>
-        var nav = responsiveNav(".nav-collapse");
+        var nav = responsiveNav(".nav-collapse", {
+        insert: "after",
+        });
     </script>
     <?php wp_footer(); ?>
 </body>

@@ -27,6 +27,6 @@
                 ?>
             </div><!-- .site-branding -->
             <nav id="site-navigation" class="main-navigation nav-collapse" role="navigation">
-                <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+                <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => false)); ?>
             </nav><!-- #site-navigation -->
         </header><!-- #masthead .site-header -->

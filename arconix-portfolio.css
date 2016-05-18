@@ -1,0 +1,100 @@
+.arconix-portfolio-list {
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.arconix-portfolio-list-item {
+    float: left;
+    margin-right: 1.5% !important;
+    margin-bottom: 15px !important;
+    padding-bottom: 0 !important;
+    width: 275px;
+}
+
+.arconix-portfolio-excerpt p,
+.arconix-portfolio-content p {
+    margin-bottom: 0 !important;
+}
+
+.arconix-portfolio-tax-list {
+    font-size: 11px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Feature Wrapper */
+.arconix-portfolio-features {
+    border-bottom: 1px solid #eee;
+    list-style-type: none;
+    margin: 0 0 10px 0 !important;
+    padding: 0 0 20px 0 !important;
+    text-align:center;
+}
+
+/* Each feature list item */
+.arconix-portfolio-features li {
+    display: inline-block;
+    margin-left: 2% !important;
+    margin-bottom: 10px !important;
+}
+
+/* Each feature link */
+.arconix-portfolio-features li a {
+    background: none repeat scroll 0 0 #eee;
+    color: #666;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    padding: 5px 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+}
+
+.arconix-portfolio-features li a:hover,
+.arconix-portfolio-features li.active a {
+    background: none repeat scroll 0 0 rgb(119, 20, 20);
+    color: #fff;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+/* The actual word "Feature" to the left of the items */
+.arconix-portfolio-category-title { 
+    margin-left: 0;
+    font-weight: bold;
+}
+
+/* The portfolio item grid */
+.arconix-portfolio-grid {
+    margin-left: 0;
+    text-align:center;
+    height: auto !important;
+}
+
+/* Each portfolio list item */
+.arconix-portfolio-grid li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 1.5% 15px 0 !important;           
+    max-width: 100%;
+    width: 280px;
+    height: auto;
+    vertical-align: top;
+}
+
+/* Portfolio featured image */
+.arconix-portfolio-grid img {
+    background-color: #fff;
+    padding: 2px;
+    border: 2px solid #eee;
+}
+
+/* Portfolio post-title */
+.arconix-portfolio-title {
+    font-size: 17px;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 3px !important;
+    text-align: center;
+}

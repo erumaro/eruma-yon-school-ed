@@ -83,8 +83,3 @@ add_action('wp_enqueue_scripts', 'eruma_yon_scripts');
 
 
 require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack.php';

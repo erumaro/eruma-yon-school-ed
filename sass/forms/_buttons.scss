@@ -1,23 +1,23 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+a[type="button"]{
 	border: 1px solid transparent;
-	border-color: $color__border-button;
 	background: $color__background-button;
 	color: rgba(255, 255, 255, .8);
     display: inline-block;
 	@include font-size(1);
 	line-height: 1;
     margin: 0 1rem 1rem 0;
-	padding: .85em 1em;
+	padding: .5em 1em;
     text-align: center;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
     transition: all .25s ease-out;
     vertical-align: middle;
 
 	&:hover {
-        background: #1583cc;
+        background: rgb(51, 10, 10);
         border-top-left-radius: 1em;
 		border-bottom-right-radius: 1em;
 		/*border-color: $color__border-button-hover;*/

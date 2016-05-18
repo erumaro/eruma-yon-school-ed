@@ -1,4 +1,4 @@
-.blog{
+.blog, .single{
     .site-content{
         display: flex;
         justify-content: space-around;
@@ -9,14 +9,23 @@
             article{
                 background: white;
                 padding: 0 0.5em;
-                margin: 3em 1em;
+                margin: 1em 1em;
                 
                 header{
                     padding-bottom: 1em;
                     border-bottom: 3px solid #000;
                     
+                    .entry-title{
+                        color: $color__link;
+                    }
+                    
                     a{
                         color: $color__link;
+                        text-decoration-style: dotted;
+                        
+                        &:hover{
+                            color: $color__link-hover;
+                        }
                     }
                 }
                 
@@ -26,6 +35,11 @@
                     
                     a, i{
                         color: $color__link;
+                        text-decoration-style: dotted;
+                        
+                        &:hover{
+                            color: $color__link-hover;
+                        }
                     }
                     
                     .tags-links a{
@@ -86,17 +100,80 @@
                     margin-bottom: 0;
                 }
             }
+            
+            .nav-links{
+                display: flex;
+                padding: 0 1em;
+                
+                a{
+                    background: $color__link;
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 0.5em;
+                    display: block;
+                }
+                
+                .nav-previous{
+                    
+                    a{
+                        &:before{
+                            font-family: 'FontAwesome';
+                            content: "\f0a8";
+                            margin-right: 0.2em;
+                        }
+                    }
+                }
+                .nav-next{
+                    margin-left: auto;
+                
+                    a{
+                        &:after{
+                            font-family: 'FontAwesome';
+                            content: "\f0a9";
+                            margin-left: 0.2em;
+                        }
+                    }
+                }
+            }
+            
+            #respond{
+                background: #606048;
+                margin: 1em 0;
+                padding: 0 1em;
+                
+                #reply-title, label{
+                    color: #fff;
+                }
+                
+                .logged-in-as a{
+                    color: #eee;
+                }
+            }
         }
         #secondary{
             background: white;
             padding: 1em;
             margin: 1em;
+            
+            .widget-title{
+                color: $color__link;
+                font-size: 1.2em;
+            }
+            
+            .search-form{
+                display: inline-flex;
+                justify-content: center;
+                
+                label{
+                    margin-right: 0.5em;
+                }
+            }
         }
     }
 }
 
 @media screen and (min-width: 37.5em) {
-.blog{
+.blog, .single{
     .site-content{
         flex-direction: row;
         align-items: flex-start;
@@ -106,6 +183,9 @@
             
             article{
                 margin: 0 0 1em 0;
+            }
+            .nav-links{
+                padding: 0;
             }
         }
         #secondary{

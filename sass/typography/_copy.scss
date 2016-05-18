@@ -8,6 +8,9 @@ dfn, cite, em, i {
 
 blockquote {
 	margin: 0 1.5em;
+    font-family: $font__quote;
+    font-style: italic;
+    font-size: 1.2em;
 }
 
 address {

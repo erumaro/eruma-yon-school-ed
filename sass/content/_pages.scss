@@ -4,20 +4,24 @@
         justify-content: space-around;
         margin-bottom: 1em;
         flex-direction: column;
-        max-width: 1000px;
+        padding: 0 2em;
         margin: 0 auto;
         
         #primary{
-            
-            .page-title{
-                color: white;
-                margin-top: 0;
-            }
+            background: #fff;
+            margin-bottom: 1em;
             
             article{
-                background: white;
-                padding: 0.5em;
-                margin: 1em 0;
+                padding: 1em;
+                
+                .entry-title{
+                    color: $color__link;
+                }
+                
+                footer{
+                    padding: 1em 0;
+                    border-top: 3px solid #000;
+                }
             }
         }
     }
@@ -28,13 +32,6 @@
     .site-content{
         align-items: stretch;
         flex-direction: row;
-        
-        #primary{
-            width: 60%;
-        }
-        #secondary{
-            width: $size__site-sidebar;
-        }
     }
 }    
 }
