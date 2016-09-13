@@ -22,7 +22,7 @@
         <h1>Senaste projekten</h1>
         
         <?php
-        $queryObject = new WP_Query( 'post_type=portfolio&posts_per_page=2' );
+        $queryObject = new WP_Query( 'post_type=portfolio&posts_per_page=3' );
         // The Loop!
         if ($queryObject->have_posts()) {
             ?>
@@ -41,7 +41,7 @@
                     ?>
                     </div>
                     <div class="item-content">
-                        <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+                        <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
                         <?php the_excerpt(); ?>
                     </div>
                 </div>

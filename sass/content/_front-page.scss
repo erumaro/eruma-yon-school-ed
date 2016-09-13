@@ -109,11 +109,11 @@
         flex-direction: row;
         
         .item{
-            width: 46%;
-            flex-direction: row;
+            width: 30%;
+            flex-direction: column;
             
             .item-content{
-                width: 50%;
+                width: 100%;
                 
                 &:nth-child(even){
                     padding: 1em;

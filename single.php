@@ -29,6 +29,7 @@ get_header(); ?>
 
             </main><!-- #main -->
         </div><!-- #primary -->
-        <?php get_sidebar(); ?>
+        <?php if(is_singular( 'portfolio' ) ){}
+        else{ get_sidebar(); } ?>
     </div>
 <?php get_footer(); ?>

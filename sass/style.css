@@ -443,6 +443,10 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+/* line 6, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/elements/_tables.scss */
+td {
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Site Frame
 --------------------------------------------------------------*/
@@ -939,14 +943,169 @@ table {
     flex-direction: row; }
     /* line 111, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_front-page.scss */
     #showcase .front-showcase-wrapper .item {
-      width: 46%;
-      flex-direction: row; }
+      width: 30%;
+      flex-direction: column; }
       /* line 115, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_front-page.scss */
       #showcase .front-showcase-wrapper .item .item-content {
-        width: 50%; }
+        width: 100%; }
         /* line 118, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_front-page.scss */
         #showcase .front-showcase-wrapper .item .item-content:nth-child(even) {
           padding: 1em; } }
+
+/* line 2, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+.single-portfolio .site-content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+  flex-direction: column;
+  padding: 0 2em;
+  margin: 0 auto; }
+  /* line 11, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+  .single-portfolio .site-content #primary article {
+    background: white;
+    padding: 0 0.5em;
+    margin: 1em 1em; }
+    /* line 16, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary article header {
+      padding-bottom: 1em;
+      border-bottom: 3px solid #000; }
+      /* line 20, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+      .single-portfolio .site-content #primary article header .entry-title {
+        color: #771414; }
+      /* line 24, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+      .single-portfolio .site-content #primary article header a {
+        color: #771414;
+        text-decoration-style: dotted; }
+        /* line 28, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+        .single-portfolio .site-content #primary article header a:hover {
+          color: #330a0a; }
+    /* line 34, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary article footer {
+      padding: 1em 0;
+      border-top: 3px solid #000; }
+      /* line 38, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+      .single-portfolio .site-content #primary article footer a, .single-portfolio .site-content #primary article footer i {
+        color: #771414;
+        text-decoration-style: dotted; }
+        /* line 42, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+        .single-portfolio .site-content #primary article footer a:hover, .single-portfolio .site-content #primary article footer i:hover {
+          color: #330a0a; }
+      /* line 47, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+      .single-portfolio .site-content #primary article footer .tags-links a {
+        background-color: #771414;
+        border-radius: 0 2px 2px 0;
+        margin-left: 8px;
+        color: #fff;
+        display: inline-block;
+        font-size: 0.5em;
+        line-height: 1.75em;
+        font-weight: 700;
+        padding: 3px 7px;
+        position: relative;
+        text-transform: uppercase;
+        text-decoration: none; }
+        /* line 61, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+        .single-portfolio .site-content #primary article footer .tags-links a:before {
+          border-top: 10px solid transparent;
+          border-right: 8px solid #771414;
+          border-bottom: 10px solid transparent;
+          content: "";
+          height: 0;
+          position: absolute;
+          top: 0;
+          left: -8px;
+          width: 0; }
+        /* line 73, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+        .single-portfolio .site-content #primary article footer .tags-links a:after {
+          background-color: #fff;
+          border-radius: 50%;
+          content: "";
+          height: 4px;
+          position: absolute;
+          top: 8px;
+          left: -2px;
+          width: 4px; }
+        /* line 84, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+        .single-portfolio .site-content #primary article footer .tags-links a:hover {
+          background-color: #330a0a; }
+        /* line 87, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+        .single-portfolio .site-content #primary article footer .tags-links a:hover:before {
+          border-right: 8px solid #330a0a; }
+    /* line 93, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary article:nth-child(even) {
+      border-left: 0.5em solid #eee; }
+    /* line 97, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary article:nth-child(odd) {
+      border-right: 0.5em solid #333; }
+    /* line 101, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary article:last-child {
+      margin-bottom: 0; }
+  /* line 106, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+  .single-portfolio .site-content #primary .nav-links {
+    display: flex;
+    padding: 0 1em; }
+    /* line 110, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary .nav-links a {
+      background: #771414;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5em;
+      display: block; }
+    /* line 121, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary .nav-links .nav-previous a:before {
+      font-family: 'FontAwesome';
+      content: "\f0a8";
+      margin-right: 0.2em; }
+    /* line 128, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary .nav-links .nav-next {
+      margin-left: auto; }
+      /* line 132, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+      .single-portfolio .site-content #primary .nav-links .nav-next a:after {
+        font-family: 'FontAwesome';
+        content: "\f0a9";
+        margin-left: 0.2em; }
+  /* line 141, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+  .single-portfolio .site-content #primary #respond {
+    background: #606048;
+    margin: 1em 0;
+    padding: 0 1em; }
+    /* line 146, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary #respond #reply-title, .single-portfolio .site-content #primary #respond label {
+      color: #fff; }
+    /* line 150, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary #respond .logged-in-as a {
+      color: #eee; }
+  /* line 155, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+  .single-portfolio .site-content #secondary {
+    background: white;
+    padding: 1em;
+    margin: 1em; }
+    /* line 160, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #secondary .widget-title {
+      color: #771414;
+      font-size: 1.2em; }
+    /* line 165, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #secondary .search-form {
+      display: inline-flex;
+      justify-content: center; }
+      /* line 169, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+      .single-portfolio .site-content #secondary .search-form label {
+        margin-right: 0.5em; }
+
+@media screen and (min-width: 37.5em) {
+  /* line 179, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+  .single-portfolio .site-content {
+    align-items: stretch;
+    flex-direction: row; }
+    /* line 183, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+    .single-portfolio .site-content #primary {
+      width: 100%; }
+      /* line 186, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+      .single-portfolio .site-content #primary article {
+        margin: 0 0 1em 0; }
+      /* line 189, F:/xampp/htdocs/Eruma/wp-content/themes/eruma-yon-school-ed/sass/content/_portfolio.scss */
+      .single-portfolio .site-content #primary .nav-links {
+        padding: 0; } }
 
 /*--------------------------------------------------------------
 # Forms
